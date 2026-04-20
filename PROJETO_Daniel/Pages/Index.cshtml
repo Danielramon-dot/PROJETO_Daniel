@@ -1,29 +1,89 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Produtos - Loja";
 }
 
 <!DOCTYPE html>
-    <html>
-    <head>
-        <title> </title>
-    </head>
-    <body>
-    
-        <div  class="grid produtos">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <main>
+        <section class="grid produtos">
+            <!-- Produto 1 -->
+            <article class="card">
+                <img src="https://patoloco.com.br/resize/imagecache/651555f6f1aacbed847b7847b01e0600.jpeg" alt="GEFORCE RTX 5050">
+                <div class="card-content">
+                    <h3 class="product-name">GEFORCE RTX 5050</h3>
+                    <p class="product-price">R$ 1.552,90</p>
+                    <p class="product-stock">Em estoque: 463</p>
+                    <button class="btn-add-cart">Adicionar ao Carrinho</button>
+                </div>
+            </article>
 
-            <div class="card" >
+           
 
-        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ85uPTYcxkip21U8MicopqqztkcFdz3j_FmDKfVrvaQsjRcZv_sLQ1041sHKUE_yxPJlGJnHp5HCZxFNOdQTjME1mjA0ui5pwA3agXBCHD2xl1-Kt1JDxIZvKj_c6rMiIb4OWelg&usqp=CAc" />
+            <article class="card">
+                <img src="https://www.hdstore.com.br/images/thumbs/4099055_600.png
+                " alt="Produto 2">
+                <div class="card-content">
+                    <h3 class="product-name">RYZEN 7 57500X,8-Core </h3>
+                    <p class="product-price">R$ 1340,90</p>
+                    <p class="product-stock">Em estoque: 280</p>
+                    <button class="btn-add-cart">Adicionar ao Carrinho</button>
+              
+                </div>
+            </article>
 
 
-            <h3> Produto </h3>
-            <h3> Preço </h3>
 
-        </div>
 
-            </div>
+            <article class="card">
+                <img src="
+                https://cdn.dooca.store/151246/products/69viblg6c948ty63afzz8tlakisnz65e3qfw_640x640+fill_ffffff.jpg?v=1768007444&webp=0
+
+                " alt="Produto 3">
+                <div class="card-content">
+                    <h3 class="product-name">MEMÓRIA DDR,8GB </h3>
+                    <p class="product-price">R$ 752,90</p>
+                    <p class="product-stock">Em estoque: 1488</p>
+                    <button class="btn-add-cart">Adicionar ao Carrinho</button>
+
+                </div>
+            </article>
+
+              
+
+            <article class="card">
+                <img src="https://images.kabum.com.br/produtos/fotos/114781/placa-mae-gigabyte-b550m-aorus-elite-amd-am4-micro-atx-ddr4_1594908595_gg.jpg
+
+                " alt="Produto 4">
+                <div class="card-content">
+                    <h3 class="product-name">PLACA MÃE  B550M </h3>
+                    <p class="product-price">R$ 971,50</p>
+                    <p class="product-stock">Em estoque: 974</p>
+                    <button class="btn-add-cart">Adicionar ao Carrinho</button>
+              
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
