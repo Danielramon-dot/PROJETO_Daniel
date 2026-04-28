@@ -1,12 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using PROJETO_Daniel.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Conexao")));
+
+
 var app = builder.Build();
 
-
-var  Database = Path.Combine(Directory.GetCurrentDirectory(), "Database");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
